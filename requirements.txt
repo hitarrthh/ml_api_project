@@ -6,3 +6,4 @@ joblib
 pytest
 httpx
 gunicorn
+python-logging-loki
