@@ -1,0 +1,19 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Data & Models (generated files)
+data/california_housing.csv
+models/*.joblib
+
+# Logs
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
