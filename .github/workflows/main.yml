@@ -28,7 +28,6 @@ jobs:
 
     - name: 4. Generate data file
       run: |
-        # *** THIS STEP IS UPDATED ***
         python -c "from sklearn.datasets import fetch_california_housing; \
         import pandas as pd; \
         housing = fetch_california_housing(); \
@@ -42,4 +41,6 @@ jobs:
         
     - name: 6. Run tests with pytest
       run: |
-        pytest
+        # *** THIS STEP IS UPDATED ***
+        # Add the current directory to the PYTHONPATH
+        PYTHONPATH=. pytest
